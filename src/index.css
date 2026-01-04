@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 4%;
+    --foreground: 180 100% 95%;
+
+    --card: 0 0% 7%;
+    --card-foreground: 180 100% 95%;
+
+    --popover: 0 0% 7%;
+    --popover-foreground: 180 100% 95%;
+
+    --primary: 185 100% 50%;
+    --primary-foreground: 0 0% 4%;
+
+    --secondary: 250 100% 65%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 220 100% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 185 100% 50%;
+
+    --radius: 0.5rem;
+
+    /* Custom neon colors */
+    --neon-cyan: 185 100% 50%;
+    --neon-blue: 220 100% 50%;
+    --neon-purple: 270 100% 65%;
+    --neon-red: 0 100% 60%;
+    --neon-green: 145 100% 50%;
+
+    /* Glow effects */
+    --glow-cyan: 0 0 20px hsl(185 100% 50% / 0.5);
+    --glow-purple: 0 0 20px hsl(270 100% 65% / 0.5);
+    --glow-blue: 0 0 20px hsl(220 100% 50% / 0.5);
+  }
+
+  .dark {
+    --background: 0 0% 4%;
+    --foreground: 180 100% 95%;
+    --card: 0 0% 7%;
+    --card-foreground: 180 100% 95%;
+    --popover: 0 0% 7%;
+    --popover-foreground: 180 100% 95%;
+    --primary: 185 100% 50%;
+    --primary-foreground: 0 0% 4%;
+    --secondary: 250 100% 65%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 220 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 185 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .font-sans {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .text-glow-cyan {
+    text-shadow: 0 0 10px hsl(185 100% 50% / 0.7), 0 0 20px hsl(185 100% 50% / 0.5), 0 0 30px hsl(185 100% 50% / 0.3);
+  }
+
+  .text-glow-purple {
+    text-shadow: 0 0 10px hsl(270 100% 65% / 0.7), 0 0 20px hsl(270 100% 65% / 0.5), 0 0 30px hsl(270 100% 65% / 0.3);
+  }
+
+  .box-glow-cyan {
+    box-shadow: 0 0 15px hsl(185 100% 50% / 0.3), 0 0 30px hsl(185 100% 50% / 0.2), inset 0 0 15px hsl(185 100% 50% / 0.1);
+  }
+
+  .box-glow-purple {
+    box-shadow: 0 0 15px hsl(270 100% 65% / 0.3), 0 0 30px hsl(270 100% 65% / 0.2), inset 0 0 15px hsl(270 100% 65% / 0.1);
+  }
+
+  .border-glow-cyan {
+    border-color: hsl(185 100% 50%);
+    box-shadow: 0 0 10px hsl(185 100% 50% / 0.5);
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent;
+  }
+
+  .cyber-grid {
+    background-image: 
+      linear-gradient(hsl(185 100% 50% / 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(185 100% 50% / 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+}
+
+/* Glitch animation */
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: hsl(185 100% 50%);
+  }
+}
+
+@keyframes matrix-fall {
+  0% {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+@keyframes scan-line {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 100%;
+  }
+}
