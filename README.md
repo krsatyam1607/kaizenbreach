@@ -24,6 +24,29 @@ No noise. No hype. Just progress.
 
 ---
 
+## 🌐 Website Overview
+
+🔗 **Live:** https://kaizenbreach.vercel.app
+
+KaizenBreach is a **minimalist portfolio + learning hub** designed to document:
+
+- Offensive security learning
+- Notes & cheat sheets
+- Personal progress tracking
+- Long-term skill roadmap
+
+### Current Sections
+
+- **Home** — Philosophy, identity, and focus areas  
+- **Notes** — Curated cybersecurity notes (Web, Network, OS, Tools)  
+- **Learning** — What I’m studying right now (OSCP, Rust, internals)  
+- **About** — Background, intent, and long-term vision  
+- **Connect** — Socials & platforms
+
+Built to stay **readable, fast, and distraction-free**.
+
+---
+
 ## 🛠️ Stack
 
 <p>
@@ -36,35 +59,80 @@ No noise. No hype. Just progress.
 
 ---
 
-## 📊 GitHub Tracker
+## 📊 GitHub Activity Tracker
 
 <p align="center">
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=krsatyam1607&theme=tokyo-night&hide_border=true"/>
 </p>
 
+Tracks **consistent effort**, not just output.
+
 ---
 
-## 🐍 Contribution Animation
+## 🐍 Contribution Timeline
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/krsatyam1607/kaizenbreach/output/github-snake-dark.svg"/>
 </p>
 
+Every square represents **learning time**, not just commits.
+
 ---
 
-## 🌐 Live Project
+## 🤝 Contributions
 
-- 🔗 https://kaizenbreach.vercel.app
+This project is **open to meaningful contributions**.
+
+### What You Can Contribute
+
+- 🧠 Security notes (Web, Network, Linux, Tools)
+- 📄 Cheatsheets & PDFs
+- 🐞 Bug fixes / UI polish
+- ⚡ Performance or accessibility improvements
+- 🧩 New sections or features (minimal & purposeful)
+
+### Contribution Rules
+
+- Keep it **clean & minimal**
+- No spam PRs
+- Quality > quantity
+- Educational intent only
+
+### How to Contribute
+
+```bash
+git fork
+git checkout -b feature/your-feature
+git commit -m "Add: meaningful improvement"
+git push origin feature/your-feature
+````
+
+Then open a **Pull Request** with a clear description.
+
+---
+
+## 🧭 Roadmap
+
+Planned additions (when time permits):
+
+* [ ] Advanced note tagging & filters
+* [ ] Red Team / Blue Team learning split
+* [ ] Writeups (CTFs, labs, experiments)
+* [ ] Offline-first notes
+* [ ] Dark-first accessibility improvements
+
+No deadlines. Only consistency.
 
 ---
 
 ## ⚠️ Disclaimer
 
-Educational use only.  
-No content is intended for misuse.
+All content is for **educational purposes only**.
+No material is intended to promote misuse or illegal activity.
 
 ---
 
 <p align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:38bdf8&height=120&section=footer"/>
 </p>
+
