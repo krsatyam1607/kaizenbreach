@@ -49,7 +49,7 @@ const LearningSection = () => {
                       className="p-0 h-auto text-xs text-muted-foreground hover:text-primary"
                       asChild
                     >
-                      <a href={item.resourceLink} target="_blank" rel="noreferrer">
+                      <a href={item.resourceLink} target="_blank" rel="noopener noreferrer">
                         View Resource <ExternalLink className="ml-1 h-3 w-3" />
                       </a>
                     </Button>

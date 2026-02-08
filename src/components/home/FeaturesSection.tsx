@@ -1,38 +1,7 @@
 import { Link } from "react-router-dom";
-import { FileText, Video, User, ExternalLink, Download, Shield } from "lucide-react";
+import { ExternalLink, Shield } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-
-const features = [
-  {
-    icon: FileText,
-    title: "Cybersecurity Notes",
-    description: "Comprehensive notes on web security, networking, Linux, and more.",
-    link: "/notes",
-    color: "text-primary",
-  },
-  {
-    icon: Video,
-    title: "Video Tutorials",
-    description: "In-depth tutorials and walkthroughs on offensive security techniques.",
-    link: "https://youtube.com/@KaizenBreach",
-    external: true,
-    color: "text-destructive",
-  },
-  {
-    icon: User,
-    title: "About KaizenBreach",
-    description: "Learn about the philosophy behind continuous improvement in security.",
-    link: "/about",
-    color: "text-secondary",
-  },
-  {
-    icon: Download,
-    title: "Resume",
-    description: "Download my professional resume for collaborations and opportunities.",
-    link: "/resume",
-    color: "text-accent",
-  },
-];
+import { featuresData } from "@/data/config";
 
 const FeaturesSection = () => {
   return (
@@ -40,9 +9,9 @@ const FeaturesSection = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 mb-4">
-            <Shield className="h-6 w-6 text-primary" />
-            <span className="font-mono text-sm text-primary">What I Offer</span>
+          <div className="inline-flex items-center gap-2 mb-4 px-3 py-1 rounded-full bg-primary/10 border border-primary/20">
+            <Shield className="h-4 w-4 text-primary" />
+            <span className="font-mono text-xs text-primary font-bold">RESOURCES</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold">
             Resources for <span className="text-primary">Security Enthusiasts</span>
@@ -54,24 +23,21 @@ const FeaturesSection = () => {
 
         {/* Features Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {features.map((feature, index) => {
+          {featuresData.map((feature, index) => {
             const Icon = feature.icon;
-            const content = (
-              <Card
-                key={index}
-                className="group bg-card/50 border-border hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_hsl(185_100%_50%_/_0.1)] cursor-pointer"
-              >
-                <CardContent className="p-6">
-                  <div className={`${feature.color} mb-4 transition-transform duration-300 group-hover:scale-110`}>
-                    <Icon className="h-10 w-10" />
+            const CardBody = (
+              <Card className="h-full group bg-card/50 border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5 cursor-pointer backdrop-blur-sm">
+                <CardContent className="p-6 flex flex-col items-start h-full">
+                  <div className={`${feature.color} p-3 rounded-lg bg-background/50 mb-4 transition-transform duration-300 group-hover:scale-110`}>
+                    <Icon className="h-8 w-8" />
                   </div>
                   <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
                     {feature.title}
                     {feature.external && (
-                      <ExternalLink className="h-4 w-4 text-muted-foreground" />
+                      <ExternalLink className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
                     )}
                   </h3>
-                  <p className="text-muted-foreground text-sm">
+                  <p className="text-muted-foreground text-sm leading-relaxed">
                     {feature.description}
                   </p>
                 </CardContent>
@@ -79,17 +45,12 @@ const FeaturesSection = () => {
             );
 
             return feature.external ? (
-              <a
-                key={index}
-                href={feature.link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {content}
+              <a key={index} href={feature.link} target="_blank" rel="noopener noreferrer" className="block h-full">
+                {CardBody}
               </a>
             ) : (
-              <Link key={index} to={feature.link}>
-                {content}
+              <Link key={index} to={feature.link} className="block h-full">
+                {CardBody}
               </Link>
             );
           })}

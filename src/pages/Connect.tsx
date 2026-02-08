@@ -1,46 +1,11 @@
-import { Youtube, Instagram, Linkedin, MessageCircle, ExternalLink } from "lucide-react";
+import { ExternalLink, MessageCircle } from "lucide-react";
 import Layout from "@/components/layout/Layout";
-
-const socialLinks = [
-  {
-    name: "YouTube",
-    description: "Watch tutorials, CTF walkthroughs, and security content",
-    url: "https://youtube.com/@KaizenBreach",
-    icon: Youtube,
-    color: "hover:border-destructive hover:text-destructive hover:shadow-[0_0_30px_hsl(0_100%_50%_/_0.3)]",
-    bgHover: "hover:bg-destructive/10",
-  },
-  {
-    name: "Instagram",
-    description: "Follow for daily security tips and updates",
-    url: "https://instagram.com/kaizenbreach",
-    icon: Instagram,
-    color: "hover:border-secondary hover:text-secondary hover:shadow-[0_0_30px_hsl(270_100%_65%_/_0.3)]",
-    bgHover: "hover:bg-secondary/10",
-  },
-  {
-    name: "LinkedIn",
-    description: "Connect for professional networking and opportunities",
-    url: "https://linkedin.com/in/krsatyam07",
-    icon: Linkedin,
-    color: "hover:border-accent hover:text-accent hover:shadow-[0_0_30px_hsl(220_100%_50%_/_0.3)]",
-    bgHover: "hover:bg-accent/10",
-  },
-  {
-    name: "Threads",
-    description: "Join the conversation on Threads",
-    url: "https://threads.net/@kaizenbreach",
-    icon: MessageCircle,
-    color: "hover:border-primary hover:text-primary hover:shadow-[0_0_30px_hsl(185_100%_50%_/_0.3)]",
-    bgHover: "hover:bg-primary/10",
-  },
-];
+import { socialLinksData, siteConfig } from "@/data/config";
 
 const Connect = () => {
   const handleContact = () => {
-    const subject = encodeURIComponent("Collaboration / Cybersecurity Query – KaizenBreach");
-    const body = encodeURIComponent(
-`Hello KaizenBreach,
+    const subject = "Collaboration / Cybersecurity Query – KaizenBreach";
+    const body = `Hello KaizenBreach,
 
 I hope this message finds you well. I am reaching out regarding:
 
@@ -50,14 +15,15 @@ I hope this message finds you well. I am reaching out regarding:
 [ ] Other: _______________
 
 Details:
-[Please describe your inquiry here]
+[Please describe your inquiry here]`;
 
-Looking forward to hearing from you.
+    // Modern way to construct mailto links
+    const params = new URLSearchParams({
+      subject: subject,
+      body: body
+    });
 
-Best regards,
-[Your Name]`
-    );
-    window.location.href = `mailto:kaizenbreach@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:${siteConfig.email}?${params.toString()}`;
   };
 
   return (
@@ -76,7 +42,7 @@ Best regards,
 
           {/* Social Links Grid */}
           <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-16">
-            {socialLinks.map((link, index) => {
+            {socialLinksData.map((link, index) => {
               const Icon = link.icon;
               return (
                 <a
@@ -103,10 +69,12 @@ Best regards,
           </div>
 
           {/* Contact Section */}
-          <div className="max-w-xl mx-auto text-center">
-            <div className="bg-card/30 border border-border rounded-lg p-8">
+          <div className="max-w-xl mx-auto text-center animate-fade-in-up delay-500">
+            <div className="bg-card/30 border border-border rounded-lg p-8 relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-50" />
+              
               <h2 className="text-2xl font-bold mb-4">
-                Want to <span className="text-secondary">Collaborate</span>?
+                Want to <span className="text-secondary-foreground">Collaborate</span>?
               </h2>
               <p className="text-muted-foreground mb-6">
                 Have a question, collaboration idea, or just want to say hi? 
@@ -114,7 +82,7 @@ Best regards,
               </p>
               <button
                 onClick={handleContact}
-                className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-mono font-medium rounded-lg transition-all duration-300 hover:shadow-[0_0_30px_hsl(185_100%_50%_/_0.5)] hover:scale-105"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-mono font-medium rounded-lg transition-all duration-300 hover:shadow-[0_0_30px_hsl(185_100%_50%_/_0.5)] hover:scale-105 active:scale-95"
               >
                 <MessageCircle className="h-5 w-5" />
                 Contact Me
