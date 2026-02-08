@@ -1,6 +1,3 @@
-Here is the updated `README.md` reflecting the addition of the **Blog**, **Tools**, and the **Hidden Terminal** features.
-
-```markdown
 <h1 align="center">🛡️ KaizenBreach</h1>
 
 <p align="center">
@@ -146,4 +143,3 @@ No material is intended to promote misuse or illegal activity.
 <p align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:38bdf8&height=120&section=footer"/>
 </p>
-```
