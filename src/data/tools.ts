@@ -6,5 +6,14 @@ export const toolsData = [
     tech: ["React", "TypeScript", "Vite", "TailwindCSS", "Clipboard API"],
     link: "https://payloadgeneratorui.vercel.app/",
     status: "Active"
+  },
+  {
+    title: "Steganography Tool",
+    description:
+      "A client-side steganography suite to hide and extract secret messages inside images using LSB encoding, with a cyber-hacker themed UI and real-time capacity checks.",
+    tech: [
+      "React", "TypeScript", "Vite", "TailwindCSS", "HTML5 Canvas API", "Lucide Icons"],
+    link: "https://steganographyui.vercel.app/",
+    status: "Active"
   }
 ];
