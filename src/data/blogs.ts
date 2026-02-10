@@ -92,9 +92,105 @@ This is a typical real-world entry point into IT and cybersecurity careers.
 
 ---
 
+# How Computers Work (Basic Hardware & Logic)
+
+## Transistors
+- Old processors had around **3,500 transistors**.
+- Modern processors contain **billions of transistors**.
+
+---
+
+## Logic Gates
+- **Logic gates** perform calculations using binary input.
+- Computers work using **0s and 1s represented by voltage levels**.
+
+---
+
+## Processor Input & Instruction Sets
+- Instructions are sent using **high and low voltage signals**.
+- **Instruction Sets** define what operations a CPU can perform.
+- As processors grow complex, **instruction sets increase**.
+
+---
+
+## Abstraction & Compilers
+- High-level languages are **abstracted from hardware**.
+- **Compilers translate high-level code into machine instructions**.
+- Developers don’t need to understand transistor-level logic.
+
+---
+
+# Introduction to Computing & Number Systems
+
+## Decimal System (Base 10)
+Uses digits **0–9**.
+
+Example:
+\`\`\`
+163 = 1×10² + 6×10¹ + 3×10⁰
+\`\`\`
+
+---
+
+## Binary System (Base 2)
+Uses digits **0 and 1**.
+
+Example:
+\`\`\`
+10100011₂ = 128 + 32 + 2 + 1 = 163₁₀
+\`\`\`
+
+---
+
+## Hexadecimal System (Base 16)
+Uses **0–9 and A–F** (A=10, B=11, … F=15)
+
+Example:
+\`\`\`
+A3₁₆ = 10×16 + 3 = 163₁₀
+\`\`\`
+
+---
+
+# Bits, Bytes & Nibbles
+
+- **Bit** = 0 or 1  
+- **Nibble** = 4 bits  
+- **Byte** = 8 bits  
+
+Example:
+\`\`\`
+1010 0011
+|----|----|
+Nibble Nibble = 1 Byte
+\`\`\`
+
+---
+
+# ASCII Encoding
+
+- **ASCII** is the first standardized text encoding system.
+- Converts:
+  - Alphabets
+  - Numbers
+  - Symbols  
+  into binary values.
+
+---
+
+# Digital Data Types
+
+- Files contain:
+  - Images
+  - Strings
+  - Binary data
+- Final stored form is always **binary instructions + data**.
+
+---
+
 ## Key Takeaway
 
-Helpdesk is not just fixing computers, it is **the foundation of enterprise IT operations** and a crucial stepping stone into **system administration, networking, and cybersecurity roles**.
+Computers fundamentally work using **binary logic built from transistors and logic gates**, while programming is possible due to **abstraction layers and compilers**. Understanding number systems and encoding is essential for IT and cybersecurity.
 
 ---
 More updates coming soon as I continue the course.
