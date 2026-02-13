@@ -18,182 +18,210 @@ The course focuses on IT roles, responsibilities, and real-world technical suppo
 **Information Technology (IT)** is a broad term used for different roles and groups of technologies.  
 The main role of IT is to **manage and support technology required for an organization to function smoothly**.
 
-### Key Points
-- IT can be outsourced sometimes.
-- IT is critical for smooth business operations.
-
 ---
 
 ## Core Responsibilities of IT
 
 ### 1. Technical Support
-- Supporting employees with technical issues.
-- Training users and setting up systems.
+- Supporting employees with technical issues
+- Training users and setting up systems
 
-### 2. Security
-- Includes **cybersecurity and physical security**.
-- Protecting systems, data, and infrastructure.
+### ### 2. Security
+- Cybersecurity and physical security
+- Protecting systems, data, and infrastructure
 
 ### 3. Data Management
-- Managing access to data.
-- Ensuring proper data handling and permissions.
+- Managing access to data
+- Ensuring proper data handling
 
 ---
 
 ## IT Roles and Job Positions
 
 ### IT Director
-- Similar to a project manager role.
-- Oversees large IT projects and strategic planning.
+- Oversees large IT projects and strategy
 
 ### IT Manager
-- Mostly people and operations management.
-- Manages IT staff and workflows.
+- Manages IT staff and operations
 
-### Network Engineer / Network Administrator
-- Designs and maintains network infrastructure.
-- Handles routers, switches, and connectivity.
+### Network Engineer / Administrator
+- Maintains routers, switches, and network infrastructure
 
 ### System Administrator
-- Manages, monitors, and administers servers.
-- Handles system upgrades and asset management.
+- Manages servers, upgrades, and assets
 
 ### Application Roles
-- Application Manager  
-- Database Administrator  
-- Application Analyst  
-- Solution Architect  
+- Application Manager
+- Database Administrator
+- Solution Architect
 
 ### Project Manager
-- Project planning  
-- Resource allocation  
-- Budget and timeline management  
-- Documentation  
+- Planning, budgeting, documentation, resource allocation
 
 ---
 
 ## Helpdesk Role (Entry-Level IT Job)
 
-### What is Helpdesk?
-Helpdesk is **frontline technical support for end users**.
-
 ### Responsibilities
-- Troubleshooting hardware and software issues.
-- Password management.
-- Customer service and communication.
-- Escalating issues to higher-level teams.
-- Installing and fixing hardware.
-- Documentation and ticket management.
-
-### Common Job Title
-> **IT Helpdesk Level 1 / Desktop Support Technician**
-
-This is a typical real-world entry point into IT and cybersecurity careers.
+- Troubleshooting hardware/software issues
+- Password resets
+- Installing and fixing hardware
+- Customer communication
+- Escalation to higher-level teams
+- Ticket documentation
 
 ---
 
-# How Computers Work (Basic Hardware & Logic)
+# How Computers Work (Basic Hardware)
 
-## Transistors
-- Old processors had around **3,500 transistors**.
-- Modern processors contain **billions of transistors**.
-
----
-
-## Logic Gates
-- **Logic gates** perform calculations using binary input.
-- Computers work using **0s and 1s represented by voltage levels**.
+## Transistors & Logic Gates
+- Computers use **billions of transistors**
+- Logic gates process binary (0 and 1)
 
 ---
 
-## Processor Input & Instruction Sets
-- Instructions are sent using **high and low voltage signals**.
-- **Instruction Sets** define what operations a CPU can perform.
-- As processors grow complex, **instruction sets increase**.
+## Number Systems
+- Decimal (Base 10)
+- Binary (Base 2)
+- Hexadecimal (Base 16)
 
 ---
 
-## Abstraction & Compilers
-- High-level languages are **abstracted from hardware**.
-- **Compilers translate high-level code into machine instructions**.
-- Developers don’t need to understand transistor-level logic.
+## Bits & Bytes
+- Bit = 0 or 1  
+- Byte = 8 bits  
+- Nibble = 4 bits  
 
 ---
 
-# Introduction to Computing & Number Systems
-
-## Decimal System (Base 10)
-Uses digits **0–9**.
-
-Example:
-\`\`\`
-163 = 1×10² + 6×10¹ + 3×10⁰
-\`\`\`
+## ASCII Encoding
+- Converts characters into binary values
 
 ---
 
-## Binary System (Base 2)
-Uses digits **0 and 1**.
+## Key Takeaway
+Understanding hardware and IT roles is essential for cybersecurity and technical support careers.
+`
+  },
 
-Example:
-\`\`\`
-10100011₂ = 128 + 32 + 2 + 1 = 163₁₀
-\`\`\`
+  // ========================= NEW BLOG SECTION ========================= //
 
----
+  {
+    slug: "laptop-desktop-components-helpdesk",
+    title: "Laptop & Desktop Components Installation and Replacement (Helpdesk Notes)",
+    date: "2026-02-12",
+    description:
+      "Practical helpdesk notes on replacing and installing laptop and desktop components with troubleshooting ticket examples.",
+    content: `
+# Laptop & Desktop Components Installation & Replacement
 
-## Hexadecimal System (Base 16)
-Uses **0–9 and A–F** (A=10, B=11, … F=15)
-
-Example:
-\`\`\`
-A3₁₆ = 10×16 + 3 = 163₁₀
-\`\`\`
-
----
-
-# Bits, Bytes & Nibbles
-
-- **Bit** = 0 or 1  
-- **Nibble** = 4 bits  
-- **Byte** = 8 bits  
-
-Example:
-\`\`\`
-1010 0011
-|----|----|
-Nibble Nibble = 1 Byte
-\`\`\`
+These notes are part of **Practical Helpdesk Fundamentals** and focus on real-world hardware handling.
 
 ---
 
-# ASCII Encoding
+# Electrostatic Discharge (ESD) Safety
 
-- **ASCII** is the first standardized text encoding system.
-- Converts:
-  - Alphabets
-  - Numbers
-  - Symbols  
-  into binary values.
+**ESD can permanently damage computer components.**
+
+## How to Prevent ESD
+- Use an **ESD wrist strap**
+- Use an **ESD mat**
+- Work on **ESD-resistant surfaces**
+- Touch only the **edges of components**
+- Touch the **metal case** to discharge static electricity
 
 ---
 
-# Digital Data Types
+# CPU Installation (Desktop)
 
-- Files contain:
-  - Images
-  - Strings
-  - Binary data
-- Final stored form is always **binary instructions + data**.
+## Steps
+1. Open CPU socket lever
+2. Align the triangle marker on CPU with motherboard socket
+3. Place CPU gently (do not force)
+4. Apply **thermal paste**
+5. Install CPU cooler and connect fan cable
+
+---
+
+# RAM Installation
+
+## DDR RAM Types
+- DDR3
+- DDR4
+- DDR5  
+**Always check motherboard compatibility**
+
+## Steps
+1. Open RAM slot clips
+2. Align notch with slot
+3. Push until clips lock
+
+---
+
+# Storage Devices
+
+## Types
+- HDD (Hard Disk Drive)
+- SSD (Solid State Drive)
+- NVMe SSD (M.2)
+
+## SATA Connector
+- Used for HDD and SATA SSD
+- Requires power + data cable
+
+---
+
+# Power Supply Unit (PSU)
+
+## Notes
+- Higher efficiency PSU = less heat
+- Always unplug PSU before opening PC
+- Do NOT open PSU internally (dangerous)
+- Check PSU switch position (ON/OFF)
+
+---
+
+# Motherboard (MOBO) Notes
+
+- Clear CMOS to reset BIOS settings
+- Identify ports and connectors
+- Label cables while assembling
+
+---
+
+# Common Hardware Troubleshooting Ticket Example
+
+## Ticket Example: Computer Will Not Power On
+
+### Steps to Troubleshoot
+1. Check power cable is plugged in
+2. Check PSU switch is ON
+3. Test wall socket or power bar
+4. Check motherboard power connectors
+5. Reset CMOS battery
+6. Test with known working PSU
+7. Replace motherboard if needed
+
+---
+
+# Real Helpdesk Scenario Example
+
+**User Ticket:**  
+> "My desktop is not turning on. No display and no fan noise."
+
+### Technician Action Plan:
+- Verify power source and cable
+- Check PSU switch and voltage selector
+- Reseat RAM and power connectors
+- Test with spare PSU
+- Escalate if motherboard is faulty
 
 ---
 
 ## Key Takeaway
 
-Computers fundamentally work using **binary logic built from transistors and logic gates**, while programming is possible due to **abstraction layers and compilers**. Understanding number systems and encoding is essential for IT and cybersecurity.
-
----
-More updates coming soon as I continue the course.
-    `
+Helpdesk technicians must understand **hardware installation, ESD safety, and structured troubleshooting workflows**.  
+Documenting every step in tickets is critical for IT operations.
+`
   }
 ];
